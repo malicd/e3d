@@ -8,9 +8,9 @@ import torch.nn as nn
 
 import torchsparse.nn as spnn
 
-from core.modules.dynamic_sparseop import *
-from core.modules.dynamic_op import *
-from core.modules.modules import RandomDepth, RandomModule
+from spvnas.core.modules.dynamic_sparseop import *
+from spvnas.core.modules.dynamic_op import *
+from spvnas.core.modules.modules import RandomDepth, RandomModule
 
 
 def adjust_bn_according_to_idx(bn, idx):

@@ -12,7 +12,7 @@ from torchsparse.point_tensor import PointTensor
 from torchsparse.utils.kernel_region import *
 from torchsparse.utils.helpers import *
 
-from core.models.utils import *
+from spvnas.core.models.utils import *
 
 
 __all__ = ['SPVCNN']
@@ -84,7 +84,7 @@ class SPVCNN(nn.Module):
         super().__init__()
 
         cr = kwargs.get('cr', 1.0)
-        cs = [32, 32, 64, 128, 256, 256, 128, 96, 96]
+        cs = kwargs.get('cs', [32, 32, 64, 128, 256, 512, 1024, 512, 256])
         cs = [int(cr * x) for x in cs]
 
         if 'pres' in kwargs and 'vres' in kwargs:

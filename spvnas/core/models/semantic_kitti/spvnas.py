@@ -12,11 +12,11 @@ from torchsparse.point_tensor import PointTensor
 from torchsparse.utils.kernel_region import *
 from torchsparse.utils.helpers import *
 
-from core.models.utils import *
+from spvnas.core.models.utils import *
 
-from core.modules.layers import *
-from core.modules.modules import *
-from core.modules.networks import *
+from spvnas.core.modules.layers import *
+from spvnas.core.modules.modules import *
+from spvnas.core.modules.networks import *
 
 
 __all__ = ['SPVNAS']
